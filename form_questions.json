@@ -22,88 +22,23 @@
                 "description": "<p>Indien u een nog een object wilt toevoegen aan uw polis, kunt u uw klanten nummer invullen.</p>"
             },
             {
-                "id": "field_108",
+                "id": "field_115",
                 "position": 2,
-                "fieldName": "kies_een_assuria_kantoor",
-                "name": "kies_een_assuria_kantoor",
-                "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
-                "defaultValue": "",
-                "choices": {
-                    "items": [
-                        {
-                            "value": "AIWI AHH",
-                            "position": 0,
-                            "label": "AIWI AHH"
-                        },
-                        {
-                            "value": "AIWI NOORD",
-                            "position": 1,
-                            "label": "AIWI NOORD"
-                        },
-                        {
-                            "value": "AIWI CITY",
-                            "position": 2,
-                            "label": "AIWI CITY"
-                        },
-                        {
-                            "value": "AIWI COMMEWIJNE",
-                            "position": 3,
-                            "label": "AIWI COMMEWIJNE"
-                        },
-                        {
-                            "value": "AIWI LELYDORP",
-                            "position": 4,
-                            "label": "AIWI LELYDORP"
-                        },
-                        {
-                            "value": "AIWI NICKERIE",
-                            "position": 5,
-                            "label": "AIWI NICKERIE"
-                        },
-                        {
-                            "value": "CORPORATE & SPECIAL ACCOUNTS",
-                            "position": 6,
-                            "label": "CORPORATE & SPECIAL ACCOUNTS"
-                        },
-                        {
-                            "value": "ASSURIA SUPPORT CENTER",
-                            "position": 7,
-                            "label": "ASSURIA SUPPORT CENTER"
-                        },
-                        {
-                            "value": "OVERIG/NVT",
-                            "position": 8,
-                            "label": "OVERIG/NVT"
-                        },
-                        {
-                            "value": "TUSSENPERSOON",
-                            "position": 9,
-                            "label": "TUSSENPERSOON"
-                        },
-                        {
-                            "value": "BANKINSTELLING",
-                            "position": 10,
-                            "label": "BANKINSTELLING"
-                        }
-                    ],
-                    "other": {
-                        "isEnabled": true,
-                        "value": "other",
-                        "name": "kies_een_assuria_kantoor_other",
-                        "fieldName": "kies_een_assuria_kantoor_other",
-                        "label": "Anders:"
+                "fieldName": "sales_channel",
+                "name": "sales_channel",
+                "type": "esriQuestionTypeText",
+                "isRequired": false,
+                "fieldType": "esriFieldTypeString",
+                "validation": {
+                    "inputMask": {
+                        "customFormat": ""
                     }
                 },
-                "fieldType": "esriFieldTypeString",
-                "choicesOrder": {
-                    "type": "default"
+                "visibility": {
+                    "type": "xlsform",
+                    "expression": "false()"
                 },
-                "appearance": {
-                    "layout": "autocomplete"
-                },
-                "fieldLength": 255,
-                "label": "Kies een Assuria kantoor:",
+                "label": "Sales Channel",
                 "description": null
             },
             {
@@ -123,7 +58,6 @@
                     "type": "xlsform",
                     "expression": "false()"
                 },
-                "fieldLength": 255,
                 "label": "Agent naam",
                 "description": null
             },
@@ -144,7 +78,6 @@
                     "type": "xlsform",
                     "expression": "false()"
                 },
-                "fieldLength": 255,
                 "label": "Agent ID_IP",
                 "description": null
             },
@@ -154,14 +87,13 @@
                 "fieldName": "naam",
                 "name": "naam",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
                         "customFormat": ""
                     }
                 },
-                "fieldLength": 255,
                 "label": "Naam",
                 "description": "<p>Vul uw familie naam in.</p>"
             },
@@ -171,14 +103,13 @@
                 "fieldName": "voornamen_voluit",
                 "name": "voornamen_voluit",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
                         "customFormat": ""
                     }
                 },
-                "fieldLength": 255,
                 "label": "Voornamen (voluit):",
                 "description": null
             },
@@ -188,13 +119,12 @@
                 "fieldName": "geboortedatum",
                 "name": "geboortedatum",
                 "type": "esriQuestionTypeDate",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeDate",
                 "validation": {},
                 "appearance": {
                     "layout": "day-month-year"
                 },
-                "fieldLength": 255,
                 "label": "Geboortedatum",
                 "description": "<p>DD/MM/YYYY</p>"
             },
@@ -204,7 +134,7 @@
                 "fieldName": "geboorteplaats",
                 "name": "geboorteplaats",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -274,7 +204,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Geboorteplaats",
                 "description": "<p>Indien u niet in Suriname bent geboren, kunt u uw geboorteland invullen.</p>"
             },
@@ -284,7 +213,7 @@
                 "fieldName": "geslacht",
                 "name": "geslacht",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -314,7 +243,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Geslacht",
                 "description": null
             },
@@ -324,14 +252,13 @@
                 "fieldName": "correspondentie_adres",
                 "name": "correspondentie_adres",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
                         "customFormat": ""
                     }
                 },
-                "fieldLength": 255,
                 "label": "Correspondentie-adres ",
                 "description": null
             },
@@ -341,7 +268,7 @@
                 "fieldName": "field_99",
                 "name": "field_99",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -2301,7 +2228,6 @@
                 "appearance": {
                     "layout": "autocomplete"
                 },
-                "fieldLength": 255,
                 "label": "Woonplaats/Wijk",
                 "description": "<p>Indien de naam van de wijk van het risico adres niet voorkomt in het dropdownmenu, kunt u op \"KOMT NIET VOOR\" klikken.</p>"
             },
@@ -2311,7 +2237,7 @@
                 "fieldName": "woonplaats_wijk",
                 "name": "woonplaats_wijk",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
@@ -2322,7 +2248,6 @@
                     "type": "xlsform",
                     "expression": "${field_99}='KOMT NIET VOOR'"
                 },
-                "fieldLength": 255,
                 "label": "Woonplaats/ Wijk",
                 "description": "<p>U kunt hier de naam van de wijk invoeren, indien het niet voorkomt in de bovenstaande dropdownmenu.</p>"
             },
@@ -2332,7 +2257,7 @@
                 "fieldName": "nationaliteit",
                 "name": "nationaliteit",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -2357,7 +2282,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Nationaliteit",
                 "description": "<p>Indien u geen Surinaamse nationaliteit heeft kunt u \"anders\" invullen en uw nationaliteit invullen.</p>"
             },
@@ -2367,14 +2291,13 @@
                 "fieldName": "idpaspoortnummer",
                 "name": "idpaspoortnummer",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
                         "customFormat": ""
                     }
                 },
-                "fieldLength": 255,
                 "label": "ID/Paspoortnummer",
                 "description": null
             },
@@ -2426,7 +2349,7 @@
                         "fieldName": "telefoonnummer",
                         "name": "telefoonnummer",
                         "type": "esriQuestionTypeNumber",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeDouble",
                         "validation": {
                             "isInteger": true
@@ -2443,7 +2366,6 @@
                         "isRequired": false,
                         "fieldType": "esriFieldTypeString",
                         "validation": {},
-                        "fieldLength": 255,
                         "label": "E-mailadres",
                         "description": null
                     }
@@ -2516,7 +2438,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "Bankinstelling",
                         "description": "<p>Indien uw banknaam niet voorkomt op de lijst kunt u het invullen.</p>"
                     },
@@ -2552,7 +2473,7 @@
                 "fieldName": "a_heeft_u_ooit_schade_gehad",
                 "name": "a_heeft_u_ooit_schade_gehad",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -2582,7 +2503,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "a. Heeft u ooit schade gehad",
                 "description": null
             },
@@ -2602,7 +2522,6 @@
                     "type": "xlsform",
                     "expression": "${a_heeft_u_ooit_schade_gehad}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "In welk jaar heeft u schade gehad?",
                 "description": null
             },
@@ -2612,7 +2531,7 @@
                 "fieldName": "b_is_er_op_dit_moment_enige_sch",
                 "name": "b_is_er_op_dit_moment_enige_sch",
                 "type": "esriQuestionTypeDropdown",
-                "isRequired": true,
+                "isRequired": false,
                 "defaultValue": "",
                 "choices": {
                     "items": [
@@ -2642,7 +2561,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "b. Is er op dit moment enige schade in behandeling?",
                 "description": null
             },
@@ -2665,7 +2583,6 @@
                     "type": "xlsform",
                     "expression": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
                 },
-                "fieldLength": 1000,
                 "label": "Wat voor type schade heeft u opgelopen?",
                 "description": null
             },
@@ -2675,7 +2592,7 @@
                 "fieldName": "in_behandeling_bij_maatschappij",
                 "name": "in_behandeling_bij_maatschappij",
                 "type": "esriQuestionTypeText",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeString",
                 "validation": {
                     "inputMask": {
@@ -2686,7 +2603,6 @@
                     "type": "xlsform",
                     "expression": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "In behandeling bij maatschappij ",
                 "description": null
             },
@@ -2735,7 +2651,6 @@
                     "type": "xlsform",
                     "expression": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "Specificeer de valuta soort van de schade.",
                 "description": "<p>De omvang van de schade in geld uitgedrukt.</p>"
             },
@@ -2776,7 +2691,6 @@
                     "type": "xlsform",
                     "expression": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
                 },
-                "fieldLength": 1000,
                 "label": "Oorzaak van de schade.",
                 "description": null
             },
@@ -2816,7 +2730,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "c. Is er ooit een gelijksoortige verzekering geweigerd of opgezegd door een verzekeringsbedrijf?",
                 "description": null
             },
@@ -2833,7 +2746,6 @@
                     "type": "xlsform",
                     "expression": "${c_is_er_ooit_een_gelijksoortige}='Ja'"
                 },
-                "fieldLength": 1000,
                 "label": "Zo ja, door welke maatschappij en waarom?",
                 "description": null
             },
@@ -2873,7 +2785,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "d. Loopt er elders nog een gelijksoortige verzekering?",
                 "description": null
             },
@@ -2894,7 +2805,6 @@
                     "type": "xlsform",
                     "expression": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "Indien ja, wat is de naam van de maatschappij?",
                 "description": null
             },
@@ -2904,7 +2814,7 @@
                 "fieldName": "polisnummer",
                 "name": "polisnummer",
                 "type": "esriQuestionTypeNumber",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeDouble",
                 "validation": {
                     "isInteger": true
@@ -2961,7 +2871,6 @@
                     "type": "xlsform",
                     "expression": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "Specificeer de valuta soort ",
                 "description": null
             },
@@ -2971,7 +2880,7 @@
                 "fieldName": "specificeer_het_verzekerd_bedra",
                 "name": "specificeer_het_verzekerd_bedra",
                 "type": "esriQuestionTypeNumber",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeDouble",
                 "validation": {
                     "isInteger": false
@@ -2989,7 +2898,7 @@
                 "fieldName": "geef_de_vervaldatum_aan",
                 "name": "geef_de_vervaldatum_aan",
                 "type": "esriQuestionTypeDate",
-                "isRequired": true,
+                "isRequired": false,
                 "fieldType": "esriFieldTypeDate",
                 "validation": {},
                 "appearance": {
@@ -2999,7 +2908,6 @@
                     "type": "xlsform",
                     "expression": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
                 },
-                "fieldLength": 255,
                 "label": "Geef de vervaldatum aan.",
                 "description": null
             },
@@ -3039,7 +2947,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "e. Heeft u verder nog iets van belang mede te delen? ",
                 "description": null
             },
@@ -3056,7 +2963,6 @@
                     "type": "xlsform",
                     "expression": "${e_heeft_u_verder_nog_iets_van_b}='Ja'"
                 },
-                "fieldLength": 1000,
                 "label": "Zo ja, geeft u dat in het kort hieronder aan.",
                 "description": null
             }
@@ -3134,7 +3040,7 @@
                         "fieldName": "field_93",
                         "name": "field_93",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5094,7 +5000,6 @@
                         "appearance": {
                             "layout": "autocomplete"
                         },
-                        "fieldLength": 255,
                         "label": "Woonplaats/Wijk",
                         "description": "<p>Indien de naam van de wijk van het risico adres niet voorkomt in het dropdownmenu, kunt u op \"KOMT NIET VOOR\" klikken.</p>"
                     },
@@ -5115,7 +5020,6 @@
                             "type": "xlsform",
                             "expression": "${field_93}='KOMT NIET VOOR'"
                         },
-                        "fieldLength": 255,
                         "label": "Woonplaats/Wijk",
                         "description": "<p>U kunt hier de naam van de wijk invoeren, indien het niet voorkomt in de bovenstaande dropdownmenu.</p>"
                     },
@@ -5125,14 +5029,13 @@
                         "fieldName": "huisbr_nummerperceel_nummer",
                         "name": "huisbr_nummerperceel_nummer",
                         "type": "esriQuestionTypeText",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeString",
                         "validation": {
                             "inputMask": {
                                 "customFormat": ""
                             }
                         },
-                        "fieldLength": 255,
                         "label": "Huis(BR)-nummer/Perceel-nummer",
                         "description": null
                     }
@@ -5155,7 +5058,7 @@
                         "fieldName": "a_kies_uw_gewenste_verzekerings",
                         "name": "a_kies_uw_gewenste_verzekerings",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5190,7 +5093,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "a. Kies uw gewenst(e) verzekeringsproduct(en)",
                         "description": null
                     },
@@ -5200,7 +5102,7 @@
                         "fieldName": "bent_u_eigenaar_van_het_woonhui",
                         "name": "bent_u_eigenaar_van_het_woonhui",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5234,7 +5136,6 @@
                             "type": "xlsform",
                             "expression": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
                         },
-                        "fieldLength": 255,
                         "label": "Bent u eigenaar van het woonhuis?",
                         "description": null
                     },
@@ -5244,7 +5145,7 @@
                         "fieldName": "nee_wie_is_dan_de_eigenaar",
                         "name": "nee_wie_is_dan_de_eigenaar",
                         "type": "esriQuestionTypeText",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeString",
                         "validation": {
                             "inputMask": {
@@ -5260,7 +5161,6 @@
                             "type": "xlsform",
                             "expression": "${bent_u_eigenaar_van_het_woonhui}='Nee'"
                         },
-                        "fieldLength": 255,
                         "label": "Nee, wie is dan de eigenaar?",
                         "description": "<p>Geeft u de volledige naam (voornaam, achternaam) van de eigenaar aan.</p>"
                     },
@@ -5270,7 +5170,7 @@
                         "fieldName": "welke_bescheiden_heeft_u",
                         "name": "welke_bescheiden_heeft_u",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5309,7 +5209,6 @@
                             "type": "xlsform",
                             "expression": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
                         },
-                        "fieldLength": 255,
                         "label": "Welke bescheiden heeft u?",
                         "description": null
                     },
@@ -5318,7 +5217,7 @@
                         "position": 52,
                         "name": "upload_een_kopie_van_de_notari",
                         "type": "esriQuestionTypeFile",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriAttachment",
                         "validation": {
                             "allowFileType": {
@@ -5388,7 +5287,6 @@
                             "type": "xlsform",
                             "expression": "(${a_kies_uw_gewenste_verzekerings}='Inboedel, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
                         },
-                        "fieldLength": 255,
                         "label": "Bent u eigenaar van de inboedel?",
                         "description": null
                     },
@@ -5409,7 +5307,6 @@
                             "type": "xlsform",
                             "expression": "${bent_u_eigenaar_van_de_inboedel}='Nee'"
                         },
-                        "fieldLength": 255,
                         "label": "Nee, wie is dan de eigenaar?",
                         "description": "<p>Geeft u de volledige naam (voornaam, achternaam) van de eigenaar aan.</p>"
                     },
@@ -5419,7 +5316,7 @@
                         "fieldName": "b_valuta",
                         "name": "b_valuta",
                         "type": "esriQuestionTypeMultiChoice",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5455,7 +5352,6 @@
                             "layout": "horizontal"
                         },
                         "validation": {},
-                        "fieldLength": 1000,
                         "label": "b. Valuta",
                         "description": "<p>Meerdere keuzes mogelijk.</p>"
                     },
@@ -5465,7 +5361,7 @@
                         "fieldName": "field_91",
                         "name": "field_91",
                         "type": "esriQuestionTypeMultiChoice",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5501,7 +5397,6 @@
                             "layout": "vertical"
                         },
                         "validation": {},
-                        "fieldLength": 1000,
                         "label": "c. Termijn",
                         "description": "<p>Meerdere keuzes mogelijk.</p>"
                     },
@@ -5517,7 +5412,6 @@
                         "appearance": {
                             "layout": "day-month-year"
                         },
-                        "fieldLength": 255,
                         "label": "d. Ingangsdatum verzekering",
                         "description": null
                     },
@@ -5527,7 +5421,7 @@
                         "fieldName": "e_wie_is_de_begunstigde_indien",
                         "name": "e_wie_is_de_begunstigde_indien",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -5557,7 +5451,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "e. Wie is de begunstigde indien er uitgekeerd moet worden bij schade?",
                         "description": null
                     },
@@ -5621,7 +5514,6 @@
                             "type": "xlsform",
                             "expression": "${e_wie_is_de_begunstigde_indien}='De bank'"
                         },
-                        "fieldLength": 255,
                         "label": "Naam van de bank",
                         "description": null
                     }
@@ -5692,7 +5584,7 @@
                                 "fieldName": "field_59_1",
                                 "name": "field_59_1",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5701,7 +5593,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 2: Storm / Rukwinden",
                                 "description": null
                             },
@@ -5711,7 +5602,7 @@
                                 "fieldName": "field_59_2",
                                 "name": "field_59_2",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5720,7 +5611,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 3:* Inbraak, vandalisme na inbraak",
                                 "description": null
                             },
@@ -5730,7 +5620,7 @@
                                 "fieldName": "field_59_6",
                                 "name": "field_59_6",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -5740,7 +5630,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 4: Diversen w.o. plunderingen, relletjes, aanrijding en aanvaring, onvoorzien uitstromen van water",
                                 "description": null
                             },
@@ -5750,7 +5639,7 @@
                                 "fieldName": "field_59_5",
                                 "name": "field_59_5",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -5760,7 +5649,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 5: Glasschade",
                                 "description": null
                             },
@@ -5770,7 +5658,7 @@
                                 "fieldName": "field_59_4",
                                 "name": "field_59_4",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -5780,7 +5668,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 6: Assuria Home Assistance (AHA)",
                                 "description": null
                             }
@@ -5840,7 +5727,7 @@
                                 "fieldName": "field_60_1",
                                 "name": "field_60_1",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5849,7 +5736,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 2: Storm / Rukwinden",
                                 "description": null
                             },
@@ -5859,7 +5745,7 @@
                                 "fieldName": "field_60_2",
                                 "name": "field_60_2",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5868,7 +5754,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 3:* Diefstal e/o vandalisme na inbraak",
                                 "description": null
                             },
@@ -5878,7 +5763,7 @@
                                 "fieldName": "field_60_3",
                                 "name": "field_60_3",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -5888,7 +5773,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 4: Diversen w.o. plunderingen, relletjes, aanrijding en aanvaring, onvoorzien uitstromen van water",
                                 "description": null
                             }
@@ -5932,7 +5816,7 @@
                                 "fieldName": "field_96_1",
                                 "name": "field_96_1",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5941,7 +5825,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 2: Storm / Rukwinden",
                                 "description": null
                             },
@@ -5951,7 +5834,7 @@
                                 "fieldName": "field_96_2",
                                 "name": "field_96_2",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "fieldType": "esriFieldTypeString",
                                 "choices": {
@@ -5960,7 +5843,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 3:* Diefstal e/o vandalisme na inbraak",
                                 "description": null
                             },
@@ -5970,7 +5852,7 @@
                                 "fieldName": "field_96_3",
                                 "name": "field_96_3",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -5980,7 +5862,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 4: Diversen w.o. plunderingen, relletjes, aanrijding en aanvaring, onvoorzien uitstromen van water",
                                 "description": null
                             },
@@ -5990,7 +5871,7 @@
                                 "fieldName": "field_96_4",
                                 "name": "field_96_4",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -6000,7 +5881,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 5: Huurdersbelang",
                                 "description": null
                             },
@@ -6010,7 +5890,7 @@
                                 "fieldName": "field_96_5",
                                 "name": "field_96_5",
                                 "type": "esriQuestionTypeSingleChoice",
-                                "isRequired": true,
+                                "isRequired": false,
                                 "defaultValue": "",
                                 "isCachedAnswer": false,
                                 "choices": {
@@ -6020,7 +5900,6 @@
                                 "choicesOrder": {
                                     "type": "default"
                                 },
-                                "fieldLength": 255,
                                 "label": "Rubriek 6: Assuria Home Assistance (AHA)",
                                 "description": null
                             }
@@ -6032,7 +5911,7 @@
                         "fieldName": "b_waar_bevinden_de_gascylinders",
                         "name": "b_waar_bevinden_de_gascylinders",
                         "type": "esriQuestionTypeMultiChoice",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6063,7 +5942,6 @@
                             "layout": "horizontal"
                         },
                         "validation": {},
-                        "fieldLength": 1000,
                         "label": "b. Waar bevinden de gascylinders zich? ",
                         "description": "<p>Meerdere selecties mogelijk.</p>"
                     },
@@ -6073,7 +5951,7 @@
                         "fieldName": "c_gebruik_van_het_pand",
                         "name": "c_gebruik_van_het_pand",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6108,7 +5986,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "c. Gebruik van het pand",
                         "description": null
                     },
@@ -6118,7 +5995,7 @@
                         "fieldName": "reden",
                         "name": "reden",
                         "type": "esriQuestionTypeTextArea",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeString",
                         "validation": {
                             "constraint": {
@@ -6131,7 +6008,6 @@
                             "type": "xlsform",
                             "expression": "(${c_gebruik_van_het_pand}='Niet permanent bewoond') or (${c_gebruik_van_het_pand}='Onbewoond')"
                         },
-                        "fieldLength": 1000,
                         "label": "Reden",
                         "description": "<p>Geef de reden aan waarom het pand <strong>niet permanent bewoon</strong>d of <strong>onbewoond </strong>is.</p>"
                     },
@@ -6141,7 +6017,7 @@
                         "fieldName": "d_categorie_woning_obv_materiaa",
                         "name": "d_categorie_woning_obv_materiaa",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6186,7 +6062,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "d. Categorie woning, o.b.v. materiaalgebruik ",
                         "description": "<p>Klik op <a href=\"https://assuria.sr/downloads/240212_Bijlage_1.pdf\" target=\"_blank\">BIJLAGE 1 Dekking woonhuis</a> voor toelichting van het materiaal.</p>"
                     },
@@ -6196,7 +6071,7 @@
                         "fieldName": "e_staat_van_onderhoud",
                         "name": "e_staat_van_onderhoud",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6231,7 +6106,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "e. Staat van onderhoud",
                         "description": null
                     },
@@ -6241,7 +6115,7 @@
                         "fieldName": "f_constructie_van_het_gebouw",
                         "name": "f_constructie_van_het_gebouw",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6286,7 +6160,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "f. Constructie van het gebouw",
                         "description": null
                     }
@@ -6323,7 +6196,7 @@
                         "fieldName": "a_wat_is_de_herbouwwaarde_van_h",
                         "name": "a_wat_is_de_herbouwwaarde_van_h",
                         "type": "esriQuestionTypeNumber",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeDouble",
                         "validation": {
                             "isInteger": false
@@ -6337,7 +6210,7 @@
                         "fieldName": "geef_de_valuta_aan_van_de_herbo",
                         "name": "geef_de_valuta_aan_van_de_herbo",
                         "type": "esriQuestionTypeSingleChoice",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6372,7 +6245,6 @@
                         "appearance": {
                             "layout": "horizontal"
                         },
-                        "fieldLength": 255,
                         "label": "Geef de valuta aan van de herbouwwaarde",
                         "description": null
                     },
@@ -6411,13 +6283,12 @@
                         "fieldName": "b_jaar_van_de_bouw",
                         "name": "b_jaar_van_de_bouw",
                         "type": "esriQuestionTypeDate",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeDate",
                         "validation": {},
                         "appearance": {
                             "layout": "year"
                         },
-                        "fieldLength": 255,
                         "label": "b. Jaar van de bouw",
                         "description": null
                     },
@@ -6433,7 +6304,6 @@
                         "appearance": {
                             "layout": "year"
                         },
-                        "fieldLength": 255,
                         "label": "Jaar laatste renovatie/ uitbreiding",
                         "description": null
                     },
@@ -6443,7 +6313,7 @@
                         "fieldName": "c_bouwoppervlakte_lengte_x_bree",
                         "name": "c_bouwoppervlakte_lengte_x_bree",
                         "type": "esriQuestionTypeNumber",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriFieldTypeDouble",
                         "validation": {
                             "isInteger": true
@@ -6457,7 +6327,7 @@
                         "fieldName": "d_zijn_er_belendingen_op_een_af",
                         "name": "d_zijn_er_belendingen_op_een_af",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6487,7 +6357,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "d. Zijn er belendingen op een afstand van minder dan 6m (berekend van muur tot muur; terreinafscheiding niet meegerekend) Vanaf de straat kijkend naar uw woning: ",
                         "description": null
                     },
@@ -6510,7 +6379,6 @@
                             "type": "xlsform",
                             "expression": "${d_zijn_er_belendingen_op_een_af}='Ja'"
                         },
-                        "fieldLength": 1000,
                         "label": "Zo ja, wat is de constructie aan de linkerkant:",
                         "description": null
                     },
@@ -6533,7 +6401,6 @@
                             "type": "xlsform",
                             "expression": "${d_zijn_er_belendingen_op_een_af}='Ja'"
                         },
-                        "fieldLength": 1000,
                         "label": "Zo ja, wat is de constructie aan de rechterkant:",
                         "description": null
                     },
@@ -6556,7 +6423,6 @@
                             "type": "xlsform",
                             "expression": "${d_zijn_er_belendingen_op_een_af}='Ja'"
                         },
-                        "fieldLength": 1000,
                         "label": "Zo ja, wat is de constructie aan de achterkant:",
                         "description": null
                     },
@@ -6579,7 +6445,6 @@
                             "type": "xlsform",
                             "expression": "${d_zijn_er_belendingen_op_een_af}='Ja'"
                         },
-                        "fieldLength": 1000,
                         "label": "Zo ja, wat is de constructie aan de voorkant:",
                         "description": null
                     },
@@ -6619,7 +6484,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "e. Zijn er meerdere objecten op het terrein die u wilt meeverzekeren?",
                         "description": null
                     },
@@ -6668,7 +6532,6 @@
                             "type": "xlsform",
                             "expression": "${e_zijn_er_meerdere_objecten_op}='Ja'"
                         },
-                        "fieldLength": 255,
                         "label": "Zo ja, geef de valuta aan van waarde.",
                         "description": null
                     },
@@ -6707,7 +6570,6 @@
                             "type": "xlsform",
                             "expression": "${e_zijn_er_meerdere_objecten_op}='Ja'"
                         },
-                        "fieldLength": 255,
                         "label": "Zo ja, geef de bestemming aan.",
                         "description": null
                     },
@@ -6717,7 +6579,7 @@
                         "fieldName": "f_is_het_pand_in_aanbouw",
                         "name": "f_is_het_pand_in_aanbouw",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6747,7 +6609,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "f. Is het pand in aanbouw? ",
                         "description": null
                     },
@@ -6770,7 +6631,6 @@
                             "type": "xlsform",
                             "expression": "${f_is_het_pand_in_aanbouw}='Ja'"
                         },
-                        "fieldLength": 1000,
                         "label": "Ja, hoever is de bouw gevorderd?",
                         "description": null
                     },
@@ -6780,7 +6640,7 @@
                         "fieldName": "g_wenst_u_uw_terreinafscheiding",
                         "name": "g_wenst_u_uw_terreinafscheiding",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6810,7 +6670,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "g. Wenst u uw terreinafscheiding ook mee te verzekeren?",
                         "description": null
                     },
@@ -6820,7 +6679,7 @@
                         "fieldName": "h_vindt_er_aftapping_van_stroom",
                         "name": "h_vindt_er_aftapping_van_stroom",
                         "type": "esriQuestionTypeDropdown",
-                        "isRequired": true,
+                        "isRequired": false,
                         "defaultValue": "",
                         "choices": {
                             "items": [
@@ -6850,7 +6709,6 @@
                         "appearance": {
                             "layout": "minimal"
                         },
-                        "fieldLength": 255,
                         "label": "h. Vindt er aftapping van stroom plaats? ",
                         "description": "<p><span style=\"color:rgb(35, 31, 32);\">Deﬁnitie stroomaftapping: stroom afname/afgifte van/naar het ene pand t.b.v. van een ander pand</span></p>"
                     },
@@ -6859,7 +6717,7 @@
                         "position": 93,
                         "name": "upload_tenminste_2_fotos_van_de",
                         "type": "esriQuestionTypeImage",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriAttachment",
                         "validation": {
                             "allowFileType": {
@@ -6890,7 +6748,7 @@
                         "position": 94,
                         "name": "upload_een_foto_van_de_breakerk",
                         "type": "esriQuestionTypeImage",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriAttachment",
                         "validation": {
                             "allowFileType": {
@@ -6921,7 +6779,7 @@
                         "position": 95,
                         "name": "upload_een_foto_van_de_gascylin",
                         "type": "esriQuestionTypeImage",
-                        "isRequired": true,
+                        "isRequired": false,
                         "fieldType": "esriAttachment",
                         "validation": {
                             "allowFileType": {
@@ -7105,7 +6963,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Status Invoerders",
                 "description": null
             },
@@ -7150,7 +7007,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Status Inspectie",
                 "description": null
             },
@@ -7195,7 +7051,6 @@
                 "appearance": {
                     "layout": "minimal"
                 },
-                "fieldLength": 255,
                 "label": "Status Acceptant",
                 "description": null
             },
