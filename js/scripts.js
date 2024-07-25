@@ -1,6 +1,28 @@
 var webform = new Survey123WebForm({
     container: "survey_html_element", // this is the element id of the previously create div element
-    itemId: "204359b351b14a838f3bd368960a8d5b" // The attached document explains where to find this
+    itemId: "204359b351b14a838f3bd368960a8d5b", // The attached document explains where to find this
+
+    //Getting Form data
+    onFormSubmitted: (data) => {
+        console.log('Form submitted: ', data.surveyFeatureSet);
+        
+            data.surveyFeatureSet.features.forEach(feature =>{
+                const attributes = feature.attributes;
+                console.log('Attributes:',attributes);
+                let count = Object.keys(attributes).length;
+                console.log('Count:', count);
+            });
+        
+            data.surveyFeatureSet.features.forEach(feature =>{
+                const geometry = feature.geometry;
+                console.log('Geometry:',geometry);
+            });
+    
+                data.surveyFeatureSet.features.forEach(feature =>{
+                const attachments = feature.attachments;
+                console.log('Attachments:',attachments);
+            });
+    }
 })
 
 webform.on("formLoaded", async (e) => {
