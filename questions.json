@@ -3,660 +3,768 @@
         "id": "field_8",
         "name": "klantnummer",
         "fieldName": "klantnummer",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": ""
     },
     {
         "id": "field_115",
         "name": "sales_channel",
         "fieldName": "sales_channel",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_113",
         "name": "agent_naam",
         "fieldName": "agent_naam",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_114",
         "name": "agent_id_ip",
         "fieldName": "agent_id_ip",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_10",
         "name": "naam",
         "fieldName": "naam",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_11",
         "name": "voornamen_voluit",
         "fieldName": "voornamen_voluit",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_12",
         "name": "geboortedatum",
         "fieldName": "geboortedatum",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": ""
     },
     {
         "id": "field_13",
         "name": "geboorteplaats",
         "fieldName": "geboorteplaats",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_14",
         "name": "geslacht",
         "fieldName": "geslacht",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_16",
         "name": "correspondentie_adres",
         "fieldName": "correspondentie_adres",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_99",
         "name": "field_99",
         "fieldName": "field_99",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_17",
         "name": "woonplaats_wijk",
         "fieldName": "woonplaats_wijk",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${field_99}='KOMT NIET VOOR'"
     },
     {
         "id": "field_18",
         "name": "nationaliteit",
         "fieldName": "nationaliteit",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_19",
         "name": "idpaspoortnummer",
         "fieldName": "idpaspoortnummer",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_92",
         "name": "upload_een_foto_van_uw_legitima",
-        "type": "esriQuestionTypeImage"
-    },
-    {
-        "id": "group_1",
-        "name": "contact_gegevens",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeImage",
+        "value": ""
     },
     {
         "id": "field_23",
         "name": "telefoonnummer",
         "fieldName": "telefoonnummer",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": ""
     },
     {
         "id": "field_24",
         "name": "e_mailadres",
         "fieldName": "e_mailadres",
-        "type": "esriQuestionTypeEmail"
-    },
-    {
-        "id": "group_2",
-        "name": "bank_gegevens",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeEmail",
+        "value": ""
     },
     {
         "id": "field_25",
         "name": "bankinstelling",
         "fieldName": "bankinstelling",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_26",
         "name": "bankrekeningnummer",
         "fieldName": "bankrekeningnummer",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": ""
     },
     {
         "id": "field_27",
         "name": "a_heeft_u_ooit_schade_gehad",
         "fieldName": "a_heeft_u_ooit_schade_gehad",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_29",
         "name": "in_welk_jaar_heeft_u_schade_geh",
         "fieldName": "in_welk_jaar_heeft_u_schade_geh",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": "",
+        "relevant": "${a_heeft_u_ooit_schade_gehad}='Ja'"
     },
     {
         "id": "field_28",
         "name": "b_is_er_op_dit_moment_enige_sch",
         "fieldName": "b_is_er_op_dit_moment_enige_sch",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_30",
         "name": "wat_voor_type_schade_heeft_u_op",
         "fieldName": "wat_voor_type_schade_heeft_u_op",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
     },
     {
         "id": "field_31",
         "name": "in_behandeling_bij_maatschappij",
         "fieldName": "in_behandeling_bij_maatschappij",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
     },
     {
         "id": "field_32",
         "name": "specificeer_de_valuta_soort_van",
         "fieldName": "specificeer_de_valuta_soort_van",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": "",
+        "relevant": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
     },
     {
         "id": "field_33",
         "name": "specificeer_het_bedrag_van_de_s",
         "fieldName": "specificeer_het_bedrag_van_de_s",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": "",
+        "relevant": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
     },
     {
         "id": "field_34",
         "name": "oorzaak_van_de_schade",
         "fieldName": "oorzaak_van_de_schade",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${b_is_er_op_dit_moment_enige_sch}='Ja'"
     },
     {
         "id": "field_35",
         "name": "c_is_er_ooit_een_gelijksoortige",
         "fieldName": "c_is_er_ooit_een_gelijksoortige",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_36",
         "name": "zo_ja_door_welke_maatschappij_e",
         "fieldName": "zo_ja_door_welke_maatschappij_e",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${c_is_er_ooit_een_gelijksoortige}='Ja'"
     },
     {
         "id": "field_37",
         "name": "d_loopt_er_elders_nog_een_gelij",
         "fieldName": "d_loopt_er_elders_nog_een_gelij",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_38",
         "name": "indien_ja_wat_is_de_naam_van_de",
         "fieldName": "indien_ja_wat_is_de_naam_van_de",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
     },
     {
         "id": "field_39",
         "name": "polisnummer",
         "fieldName": "polisnummer",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": "",
+        "relevant": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
     },
     {
         "id": "field_40",
         "name": "specificeer_de_valuta_soort",
         "fieldName": "specificeer_de_valuta_soort",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": "",
+        "relevant": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
     },
     {
         "id": "field_41",
         "name": "specificeer_het_verzekerd_bedra",
         "fieldName": "specificeer_het_verzekerd_bedra",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": "",
+        "relevant": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
     },
     {
         "id": "field_42",
         "name": "geef_de_vervaldatum_aan",
         "fieldName": "geef_de_vervaldatum_aan",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": "",
+        "relevant": "${d_loopt_er_elders_nog_een_gelij}='Ja'"
     },
     {
         "id": "field_43",
         "name": "e_heeft_u_verder_nog_iets_van_b",
         "fieldName": "e_heeft_u_verder_nog_iets_van_b",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_44",
         "name": "zo_ja_geeft_u_dat_in_het_kort_h",
         "fieldName": "zo_ja_geeft_u_dat_in_het_kort_h",
-        "type": "esriQuestionTypeTextArea"
-    },
-    {
-        "id": "group_3",
-        "name": "_1_risico_adres",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${e_heeft_u_verder_nog_iets_van_b}='Ja'"
     },
     {
         "id": "field_45",
         "name": "prikt_een_punt_op_de_kaart_van",
-        "type": "esriQuestionTypeGeoPoint"
+        "type": "esriQuestionTypeGeoPoint",
+        "value": ""
     },
     {
         "id": "field_93",
         "name": "field_93",
         "fieldName": "field_93",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_46",
         "name": "woonplaatswijk",
         "fieldName": "woonplaatswijk",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${field_93}='KOMT NIET VOOR'"
     },
     {
         "id": "field_47",
         "name": "huisbr_nummerperceel_nummer",
         "fieldName": "huisbr_nummerperceel_nummer",
-        "type": "esriQuestionTypeText"
-    },
-    {
-        "id": "group_4",
-        "name": "_2_productinformatie",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeText",
+        "value": ""
     },
     {
         "id": "field_48",
         "name": "a_kies_uw_gewenste_verzekerings",
         "fieldName": "a_kies_uw_gewenste_verzekerings",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_49",
         "name": "bent_u_eigenaar_van_het_woonhui",
         "fieldName": "bent_u_eigenaar_van_het_woonhui",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_50",
         "name": "nee_wie_is_dan_de_eigenaar",
         "fieldName": "nee_wie_is_dan_de_eigenaar",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${bent_u_eigenaar_van_het_woonhui}='Nee'"
     },
     {
         "id": "field_95",
         "name": "welke_bescheiden_heeft_u",
         "fieldName": "welke_bescheiden_heeft_u",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_51",
         "name": "upload_een_kopie_van_de_notari",
-        "type": "esriQuestionTypeFile"
+        "type": "esriQuestionTypeFile",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_52",
         "name": "bent_u_eigenaar_van_de_inboedel",
         "fieldName": "bent_u_eigenaar_van_de_inboedel",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Inboedel, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_53",
         "name": "field_53",
         "fieldName": "field_53",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${bent_u_eigenaar_van_de_inboedel}='Nee'"
     },
     {
         "id": "field_90",
         "name": "b_valuta",
         "fieldName": "b_valuta",
-        "type": "esriQuestionTypeMultiChoice"
+        "type": "esriQuestionTypeMultiChoice",
+        "value": ""
     },
     {
         "id": "field_91",
         "name": "field_91",
         "fieldName": "field_91",
-        "type": "esriQuestionTypeMultiChoice"
+        "type": "esriQuestionTypeMultiChoice",
+        "value": ""
     },
     {
         "id": "field_56",
         "name": "d_ingangsdatum_verzekering",
         "fieldName": "d_ingangsdatum_verzekering",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": ""
     },
     {
         "id": "field_57",
         "name": "e_wie_is_de_begunstigde_indien",
         "fieldName": "e_wie_is_de_begunstigde_indien",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_58",
         "name": "naam_van_de_bank",
         "fieldName": "naam_van_de_bank",
-        "type": "esriQuestionTypeDropdown"
-    },
-    {
-        "id": "group_5",
-        "name": "_3_dekking_woonhuis_inboedel",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeDropdown",
+        "value": "",
+        "relevant": "${e_wie_is_de_begunstigde_indien}='De bank'"
     },
     {
         "id": "field_97",
         "name": "standaard_dekking_woonhuis",
-        "type": "esriQuestionTypeNote"
+        "type": "esriQuestionTypeNote",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_59",
         "name": "a_dekking_woonhuis",
-        "type": "esriQuestionTypeSingleChoiceGrid"
+        "type": "esriQuestionTypeSingleChoiceGrid",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Woonhuis, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_59_1",
         "name": "field_59_1",
         "fieldName": "field_59_1",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_59_2",
         "name": "field_59_2",
         "fieldName": "field_59_2",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_59_6",
         "name": "field_59_6",
         "fieldName": "field_59_6",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_59_5",
         "name": "field_59_5",
         "fieldName": "field_59_5",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_59_4",
         "name": "field_59_4",
         "fieldName": "field_59_4",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_98",
         "name": "standaard_dekking_inboedel",
-        "type": "esriQuestionTypeNote"
+        "type": "esriQuestionTypeNote",
+        "value": "",
+        "relevant": "(${a_kies_uw_gewenste_verzekerings}='Inboedel, a.u.b. specificatie (') or (${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp')"
     },
     {
         "id": "field_60",
         "name": "dekking_inboedel",
-        "type": "esriQuestionTypeSingleChoiceGrid"
+        "type": "esriQuestionTypeSingleChoiceGrid",
+        "value": "",
+        "relevant": "${a_kies_uw_gewenste_verzekerings}='Woonhuis en Inboedel, a.u.b. sp'"
     },
     {
         "id": "field_60_1",
         "name": "field_60_1",
         "fieldName": "field_60_1",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_60_2",
         "name": "field_60_2",
         "fieldName": "field_60_2",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_60_3",
         "name": "field_60_3",
         "fieldName": "field_60_3",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_96",
         "name": "a_dekking_inboedel_",
-        "type": "esriQuestionTypeSingleChoiceGrid"
+        "type": "esriQuestionTypeSingleChoiceGrid",
+        "value": "",
+        "relevant": "${a_kies_uw_gewenste_verzekerings}='Inboedel, a.u.b. specificatie ('"
     },
     {
         "id": "field_96_1",
         "name": "field_96_1",
         "fieldName": "field_96_1",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_96_2",
         "name": "field_96_2",
         "fieldName": "field_96_2",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_96_3",
         "name": "field_96_3",
         "fieldName": "field_96_3",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_96_4",
         "name": "field_96_4",
         "fieldName": "field_96_4",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_96_5",
         "name": "field_96_5",
         "fieldName": "field_96_5",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_63",
         "name": "b_waar_bevinden_de_gascylinders",
         "fieldName": "b_waar_bevinden_de_gascylinders",
-        "type": "esriQuestionTypeMultiChoice"
+        "type": "esriQuestionTypeMultiChoice",
+        "value": ""
     },
     {
         "id": "field_64",
         "name": "c_gebruik_van_het_pand",
         "fieldName": "c_gebruik_van_het_pand",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_65",
         "name": "reden",
         "fieldName": "reden",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "(${c_gebruik_van_het_pand}='Niet permanent bewoond') or (${c_gebruik_van_het_pand}='Onbewoond')"
     },
     {
         "id": "field_67",
         "name": "d_categorie_woning_obv_materiaa",
         "fieldName": "d_categorie_woning_obv_materiaa",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_68",
         "name": "e_staat_van_onderhoud",
         "fieldName": "e_staat_van_onderhoud",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_66",
         "name": "f_constructie_van_het_gebouw",
         "fieldName": "f_constructie_van_het_gebouw",
-        "type": "esriQuestionTypeDropdown"
-    },
-    {
-        "id": "group_6",
-        "name": "bijlage_1_dekking_woonhuis",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_69",
         "name": "a_wat_is_de_herbouwwaarde_van_h",
         "fieldName": "a_wat_is_de_herbouwwaarde_van_h",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": ""
     },
     {
         "id": "field_70",
         "name": "geef_de_valuta_aan_van_de_herbo",
         "fieldName": "geef_de_valuta_aan_van_de_herbo",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": ""
     },
     {
         "id": "field_71",
         "name": "indien_aanwezig_upload_een_copi",
-        "type": "esriQuestionTypeFile"
+        "type": "esriQuestionTypeFile",
+        "value": ""
     },
     {
         "id": "field_72",
         "name": "b_jaar_van_de_bouw",
         "fieldName": "b_jaar_van_de_bouw",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": ""
     },
     {
         "id": "field_73",
         "name": "jaar_laatste_renovatie_uitbreid",
         "fieldName": "jaar_laatste_renovatie_uitbreid",
-        "type": "esriQuestionTypeDate"
+        "type": "esriQuestionTypeDate",
+        "value": ""
     },
     {
         "id": "field_74",
         "name": "c_bouwoppervlakte_lengte_x_bree",
         "fieldName": "c_bouwoppervlakte_lengte_x_bree",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": ""
     },
     {
         "id": "field_75",
         "name": "d_zijn_er_belendingen_op_een_af",
         "fieldName": "d_zijn_er_belendingen_op_een_af",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_76",
         "name": "zo_ja_wat_is_de_constructie_aan",
         "fieldName": "zo_ja_wat_is_de_constructie_aan",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${d_zijn_er_belendingen_op_een_af}='Ja'"
     },
     {
         "id": "field_77",
         "name": "field_77",
         "fieldName": "field_77",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${d_zijn_er_belendingen_op_een_af}='Ja'"
     },
     {
         "id": "field_78",
         "name": "field_78",
         "fieldName": "field_78",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${d_zijn_er_belendingen_op_een_af}='Ja'"
     },
     {
         "id": "field_79",
         "name": "field_79",
         "fieldName": "field_79",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${d_zijn_er_belendingen_op_een_af}='Ja'"
     },
     {
         "id": "field_80",
         "name": "e_zijn_er_meerdere_objecten_op",
         "fieldName": "e_zijn_er_meerdere_objecten_op",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_81",
         "name": "zo_ja_geef_de_valuta_aan_van_wa",
         "fieldName": "zo_ja_geef_de_valuta_aan_van_wa",
-        "type": "esriQuestionTypeSingleChoice"
+        "type": "esriQuestionTypeSingleChoice",
+        "value": "",
+        "relevant": "${e_zijn_er_meerdere_objecten_op}='Ja'"
     },
     {
         "id": "field_82",
         "name": "zo_ja_geef_de_waarde_aan",
         "fieldName": "zo_ja_geef_de_waarde_aan",
-        "type": "esriQuestionTypeNumber"
+        "type": "esriQuestionTypeNumber",
+        "value": "",
+        "relevant": "${e_zijn_er_meerdere_objecten_op}='Ja'"
     },
     {
         "id": "field_83",
         "name": "zo_ja_geef_de_bestemming_aan",
         "fieldName": "zo_ja_geef_de_bestemming_aan",
-        "type": "esriQuestionTypeText"
+        "type": "esriQuestionTypeText",
+        "value": "",
+        "relevant": "${e_zijn_er_meerdere_objecten_op}='Ja'"
     },
     {
         "id": "field_84",
         "name": "f_is_het_pand_in_aanbouw",
         "fieldName": "f_is_het_pand_in_aanbouw",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_85",
         "name": "ja_hoever_is_de_bouw_gevorderd",
         "fieldName": "ja_hoever_is_de_bouw_gevorderd",
-        "type": "esriQuestionTypeTextArea"
+        "type": "esriQuestionTypeTextArea",
+        "value": "",
+        "relevant": "${f_is_het_pand_in_aanbouw}='Ja'"
     },
     {
         "id": "field_86",
         "name": "g_wenst_u_uw_terreinafscheiding",
         "fieldName": "g_wenst_u_uw_terreinafscheiding",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_87",
         "name": "h_vindt_er_aftapping_van_stroom",
         "fieldName": "h_vindt_er_aftapping_van_stroom",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_100",
         "name": "upload_tenminste_2_fotos_van_de",
-        "type": "esriQuestionTypeImage"
+        "type": "esriQuestionTypeImage",
+        "value": ""
     },
     {
         "id": "field_101",
         "name": "upload_een_foto_van_de_breakerk",
-        "type": "esriQuestionTypeImage"
+        "type": "esriQuestionTypeImage",
+        "value": ""
     },
     {
         "id": "field_102",
         "name": "upload_een_foto_van_de_gascylin",
-        "type": "esriQuestionTypeImage"
+        "type": "esriQuestionTypeImage",
+        "value": ""
     },
     {
         "id": "field_106",
         "name": "upload_foto_s_van_alle_gevels",
-        "type": "esriQuestionTypeImage"
-    },
-    {
-        "id": "group_7",
-        "name": "assuria_inboedel_verzekering",
-        "type": "esriQuestionTypeGroup"
+        "type": "esriQuestionTypeImage",
+        "value": ""
     },
     {
         "id": "field_88",
         "name": "bijlage_2",
-        "type": "esriQuestionTypeFile"
+        "type": "esriQuestionTypeFile",
+        "value": ""
     },
     {
         "id": "field_89",
         "name": "bijlage_3",
-        "type": "esriQuestionTypeFile"
+        "type": "esriQuestionTypeFile",
+        "value": ""
     },
     {
         "id": "field_2",
         "name": "status_invoerders",
         "fieldName": "status_invoerders",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_5",
         "name": "status_inspectie",
         "fieldName": "status_inspectie",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_6",
         "name": "status_acceptant",
         "fieldName": "status_acceptant",
-        "type": "esriQuestionTypeDropdown"
+        "type": "esriQuestionTypeDropdown",
+        "value": ""
     },
     {
         "id": "field_7",
         "name": "offerte_verzekering",
-        "type": "esriQuestionTypeFile"
+        "type": "esriQuestionTypeFile",
+        "value": ""
     },
     {
         "id": "field_1",
         "name": "ondertekening",
-        "type": "esriQuestionTypeSignature"
+        "type": "esriQuestionTypeSignature",
+        "value": ""
     }
 ]

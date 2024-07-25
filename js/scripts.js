@@ -48,12 +48,26 @@ function flattenQuestions(obj) {
     function flatten(obj) {
         if (obj.questions) {
             obj.questions.forEach(question => {
-                flattened.push({
-                    'id': question.id,
-                    'name': question.name,
-                    'fieldName': question.fieldName,
-                    'type': question.type
-                });
+                if (!question.id.includes('group')) {
+                    if (question.relevant) {
+                        flattened.push({
+                            'id': question.id,
+                            'name': question.name,
+                            'fieldName': question.fieldName,
+                            'type': question.type,
+                            'value': question.value === undefined ? '' : question.value,
+                            'relevant': question.relevant.expression
+                        });
+                    } else {
+                        flattened.push({
+                            'id': question.id,
+                            'name': question.name,
+                            'fieldName': question.fieldName,
+                            'type': question.type,
+                            'value': question.value === undefined ? '' : question.value,
+                        });
+                    }
+                }
                 flatten(question);
             });
         }
