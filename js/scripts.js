@@ -25,4 +25,41 @@ webform.on("formLoaded", async (e) => {
             "agent_id_ip": urlParams.get("agent_id_ip")
         })
     }
+
+    const pages = webform.getQuestions();
+
+    const questions = [];
+    pages.forEach((page, index) => {
+        const q = flattenQuestions(page);
+        if (q.constructor === Array) {
+            q.forEach((question, index) => {
+                questions.push(question)
+            })
+        } else {
+            questions.push(q);
+        }
+    })
+    console.log(questions);
 })
+
+function flattenQuestions(obj) {
+    let flattened = [];
+
+    function flatten(obj) {
+        if (obj.questions) {
+            obj.questions.forEach(question => {
+                flattened.push({
+                    'id': question.id,
+                    'name': question.name,
+                    'fieldName': question.fieldName,
+                    'type': question.type
+                });
+                flatten(question);
+            });
+        }
+    }
+
+    flatten(obj);
+
+    return flattened;
+}
