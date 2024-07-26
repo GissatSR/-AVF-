@@ -4,32 +4,41 @@ var webform = new Survey123WebForm({
     
     //Getting Form data
     onFormSubmitted: (data) => {
-      console.log('Form submitted: ', data.surveyFeatureSet);
-      data.surveyFeatureSet.features.forEach(
-        feature => {
-          const attributes = feature.attributes;
-          let attributesQuestions = attributes.question;
-          let attributesValues = attributes.value;
-          console.log('attributesValues:', attributesValues);
-
+        function getDataFeaturesSet(obj){
+            if (obj === 'ATTRIBUTES'){
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                      const attributes = feature.attributes;
+                    //   let attributesQuestions = attributes.question;
+                    //   let attributesValues = attributes.value;
+                      console.log('attributes', attributes);
+                      return attributes;
+                    }
+                  );  
+            }
+            else if (obj === 'GEOMETRY'){
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                    const geometry = feature.geometry;
+                    // let geometryQuestions = geometry.question;
+                    // let geometryValues = geometry.value;
+                      console.log('Geometry:', geometry);
+                      return geometry;
+                    }
+                );                
+            }
+            else {
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                      const attachments = feature.attachments;
+                    //   let attachmentsQuestions = attachments.question;
+                    //   let attachmentsValues = attachments.value;
+                      console.log('Attachments:', attachments);
+                      return attachments;
+                    }
+                  );
+            }
         }
-      );
-      data.surveyFeatureSet.features.forEach(
-        feature => {
-          const geometry = feature.geometry;
-          let geometryQuestions = geometry.question;
-          let geometryValues = geometry.value;
-        //   console.log('Geometry:', geometry);
-        }
-      );
-      data.surveyFeatureSet.features.forEach(
-        feature => {
-          const attachments = feature.attachments;
-          let attachmentsQuestions = attachments.question;
-          let attachmentsValues = attachments.value;
-        //   console.log('Attachments:', attachments);
-        }
-      );
     }
   })
 
@@ -69,7 +78,9 @@ var webform = new Survey123WebForm({
             questions.push(q);
         }
     })
-    console.log(questions);
+    let test = getAttributes(questions);
+    console.log('test', test);
+    console.log('questions',questions);
 })
 
 function flattenQuestions(obj) {
@@ -107,3 +118,25 @@ function flattenQuestions(obj) {
 
     return flattened;
 }
+
+//Sort Data
+function getAttributes(obj){
+    let attributes = getDataFeaturesSet('ATTRIBUTES');
+    let formData = []
+    obj.questions.forEach(question =>{
+        attributes.forEah(attribute=>
+        {
+            if (question.fieldName === attribute.fieldName){
+                formData.push({
+                    'id': question.id,
+                    'fieldName': question.fieldName,
+                    'value': attribute.value
+                })
+            }
+        })
+    })
+
+}
+
+
+
