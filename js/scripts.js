@@ -69,7 +69,7 @@ var webform = new Survey123WebForm({
             questions.push(q);
         }
     })
-    console.log(questions);
+    console.log('questions',questions);
 })
 
 function flattenQuestions(obj) {
