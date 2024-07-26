@@ -3,43 +3,43 @@ var webform = new Survey123WebForm({
     itemId: '204359b351b14a838f3bd368960a8d5b', // The attached document explains where to find this
     
     //Getting Form data
-    onFormSubmitted: (data) => {
-        function getDataFeaturesSet(obj){
-            if (obj === 'ATTRIBUTES'){
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                      const attributes = feature.attributes;
-                    //   let attributesQuestions = attributes.question;
-                    //   let attributesValues = attributes.value;
-                      console.log('attributes', attributes);
-                      return attributes;
-                    }
-                  );  
-            }
-            else if (obj === 'GEOMETRY'){
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                    const geometry = feature.geometry;
-                    // let geometryQuestions = geometry.question;
-                    // let geometryValues = geometry.value;
-                      console.log('Geometry:', geometry);
-                      return geometry;
-                    }
-                );                
-            }
-            else {
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                      const attachments = feature.attachments;
-                    //   let attachmentsQuestions = attachments.question;
-                    //   let attachmentsValues = attachments.value;
-                      console.log('Attachments:', attachments);
-                      return attachments;
-                    }
-                  );
-            }
-        }
-    }
+    // onFormSubmitted: (data) => {
+    //     function getDataFeaturesSet(obj){
+    //         if (obj === 'ATTRIBUTES'){
+    //             data.surveyFeatureSet.features.forEach(
+    //                 feature => {
+    //                   const attributes = feature.attributes;
+    //                 //   let attributesQuestions = attributes.question;
+    //                 //   let attributesValues = attributes.value;
+    //                   console.log('attributes', attributes);
+    //                   return attributes;
+    //                 }
+    //               );  
+    //         }
+    //         else if (obj === 'GEOMETRY'){
+    //             data.surveyFeatureSet.features.forEach(
+    //                 feature => {
+    //                 const geometry = feature.geometry;
+    //                 // let geometryQuestions = geometry.question;
+    //                 // let geometryValues = geometry.value;
+    //                   console.log('Geometry:', geometry);
+    //                   return geometry;
+    //                 }
+    //             );                
+    //         }
+    //         else {
+    //             data.surveyFeatureSet.features.forEach(
+    //                 feature => {
+    //                   const attachments = feature.attachments;
+    //                 //   let attachmentsQuestions = attachments.question;
+    //                 //   let attachmentsValues = attachments.value;
+    //                   console.log('Attachments:', attachments);
+    //                   return attachments;
+    //                 }
+    //               );
+    //         }
+    //     }
+    // }
   })
 
   webform.on("formLoaded", async (e) => {
@@ -121,20 +121,20 @@ function flattenQuestions(obj) {
 
 //Sort Data
 function getAttributes(obj){
-    let attributes = getDataFeaturesSet('ATTRIBUTES');
+    // let attributes = getDataFeaturesSet('ATTRIBUTES');
     let formData = []
     obj.questions.forEach(question =>{
-        attributes.forEah(attribute=>
-        {
-            if (question.fieldName === attribute.fieldName){
+        // attributes.forEah(attribute=>
+        // {    
+                let value = getQuestionValue(question)
                 formData.push({
                     'id': question.id,
                     'fieldName': question.fieldName,
-                    'value': attribute.value
+                    'value': value
                 })
             }
-        })
-    })
+        // })
+  )
 
 }
 
