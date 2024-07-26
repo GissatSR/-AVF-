@@ -113,10 +113,10 @@ function flattenQuestions(obj) {
 
 function sortFormData(obj) {
     let formData = [];
-    if (attributes.question === flatten.fieldName) {
+    if (attributes.question === questions.fieldName) {
         formData.push({
-            'id': flatten.id,
-            'fieldName': flatten.fieldName,
+            'id': questions.id,
+            'fieldName': questions.fieldName,
             'value': attributes.value
         });
     }
