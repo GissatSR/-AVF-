@@ -69,10 +69,7 @@ var webform = new Survey123WebForm({
             questions.push(q);
         }
     })
-    test = sortFormData(questions);
-    console.log('question'
-                , uestions);
-    console.log('test', test);
+    console.log(questions);
 })
 
 function flattenQuestions(obj) {
@@ -109,19 +106,4 @@ function flattenQuestions(obj) {
     flatten(obj);
 
     return flattened;
-}
-
-
-//Sort data
-
-function sortFormData(obj) {
-    let formData = [];
-    if (attributes.question === questions.fieldName) {
-        formData.push({
-            'id': questions.id,
-            'fieldName': questions.fieldName,
-            'value': attributes.value
-        });
-    }
-    return formData;
 }
