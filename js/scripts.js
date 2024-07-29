@@ -2,44 +2,44 @@ var webform = new Survey123WebForm({
     container: 'survey_html_element', // this is the element id of the previously create div element
     itemId: '204359b351b14a838f3bd368960a8d5b', // The attached document explains where to find this
     
-    //Getting Form data
-    // onFormSubmitted: (data) => {
-    //     function getDataFeaturesSet(obj){
-    //         if (obj === 'ATTRIBUTES'){
-    //             data.surveyFeatureSet.features.forEach(
-    //                 feature => {
-    //                   const attributes = feature.attributes;
-    //                 //   let attributesQuestions = attributes.question;
-    //                 //   let attributesValues = attributes.value;
-    //                   console.log('attributes', attributes);
-    //                   return attributes;
-    //                 }
-    //               );  
-    //         }
-    //         else if (obj === 'GEOMETRY'){
-    //             data.surveyFeatureSet.features.forEach(
-    //                 feature => {
-    //                 const geometry = feature.geometry;
-    //                 // let geometryQuestions = geometry.question;
-    //                 // let geometryValues = geometry.value;
-    //                   console.log('Geometry:', geometry);
-    //                   return geometry;
-    //                 }
-    //             );                
-    //         }
-    //         else {
-    //             data.surveyFeatureSet.features.forEach(
-    //                 feature => {
-    //                   const attachments = feature.attachments;
-    //                 //   let attachmentsQuestions = attachments.question;
-    //                 //   let attachmentsValues = attachments.value;
-    //                   console.log('Attachments:', attachments);
-    //                   return attachments;
-    //                 }
-    //               );
-    //         }
-    //     }
-    // }
+    Getting Form data
+    onFormSubmitted: (data) => {
+        function getDataFeaturesSet(obj){
+            if (obj === 'ATTRIBUTES'){
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                      const attributes = feature.attributes;
+                    //   let attributesQuestions = attributes.question;
+                    //   let attributesValues = attributes.value;
+                      console.log('attributes', attributes);
+                      return attributes;
+                    }
+                  );  
+            }
+            else if (obj === 'GEOMETRY'){
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                    const geometry = feature.geometry;
+                    // let geometryQuestions = geometry.question;
+                    // let geometryValues = geometry.value;
+                      console.log('Geometry:', geometry);
+                      return geometry;
+                    }
+                );                
+            }
+            else {
+                data.surveyFeatureSet.features.forEach(
+                    feature => {
+                      const attachments = feature.attachments;
+                    //   let attachmentsQuestions = attachments.question;
+                    //   let attachmentsValues = attachments.value;
+                      console.log('Attachments:', attachments);
+                      return attachments;
+                    }
+                  );
+            }
+        }
+    }
   })
 
   webform.on("formLoaded", async (e) => {
@@ -78,8 +78,6 @@ var webform = new Survey123WebForm({
             questions.push(q);
         }
     })
-    let test = getAttributes(questions);
-    console.log('test', test);
     console.log('questions',questions);
 })
 
@@ -119,24 +117,7 @@ function flattenQuestions(obj) {
     return flattened;
 }
 
-//Sort Data
-function getAttributes(obj){
-    // let attributes = getDataFeaturesSet('ATTRIBUTES');
-    let formData = []
-    obj.questions.forEach(question =>{
-        // attributes.forEah(attribute=>
-        // {    
-                let value = getQuestionValue(question)
-                formData.push({
-                    'id': question.id,
-                    'fieldName': question.fieldName,
-                    'value': value
-                })
-            }
-        // })
-  )
 
-}
 
 
 
