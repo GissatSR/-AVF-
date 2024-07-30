@@ -1,48 +1,31 @@
 var webform = new Survey123WebForm({
-    container: 'survey_html_element', // this is the element id of the previously create div element
-    itemId: '204359b351b14a838f3bd368960a8d5b', // The attached document explains where to find this
-    
-    Getting Form data
-    onFormSubmitted: (data) => {
-        function getDataFeaturesSet(obj){
-            if (obj === 'ATTRIBUTES'){
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                      const attributes = feature.attributes;
-                    //   let attributesQuestions = attributes.question;
-                    //   let attributesValues = attributes.value;
-                      console.log('attributes', attributes);
-                      return attributes;
-                    }
-                  );  
-            }
-            else if (obj === 'GEOMETRY'){
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                    const geometry = feature.geometry;
-                    // let geometryQuestions = geometry.question;
-                    // let geometryValues = geometry.value;
-                      console.log('Geometry:', geometry);
-                      return geometry;
-                    }
-                );                
-            }
-            else {
-                data.surveyFeatureSet.features.forEach(
-                    feature => {
-                      const attachments = feature.attachments;
-                    //   let attachmentsQuestions = attachments.question;
-                    //   let attachmentsValues = attachments.value;
-                      console.log('Attachments:', attachments);
-                      return attachments;
-                    }
-                  );
-            }
-        }
-    }
-  })
+    container: "survey_html_element", // this is the element id of the previously create div element
+    itemId: "204359b351b14a838f3bd368960a8d5b", // The attached document explains where to find this
 
-  webform.on("formLoaded", async (e) => {
+    //Getting Form data
+    onFormSubmitted: (data) => {
+        console.log('Form submitted: ', data.surveyFeatureSet);
+        
+            data.surveyFeatureSet.features.forEach(feature =>{
+                const attributes = feature.attributes;
+                console.log('Attributes:',attributes);
+                let count = Object.keys(attributes).length;
+                console.log('Count:', count);
+            });
+        
+            data.surveyFeatureSet.features.forEach(feature =>{
+                const geometry = feature.geometry;
+                console.log('Geometry:',geometry);
+            });
+    
+                data.surveyFeatureSet.features.forEach(feature =>{
+                const attachments = feature.attachments;
+                console.log('Attachments:',attachments);
+            });
+    }
+})
+
+webform.on("formLoaded", async (e) => {
     const urlParams = new URLSearchParams(window.location.search);
     // Set sales channel form-field
     if (urlParams.get("sales_channel") !== null) {
@@ -78,7 +61,7 @@ var webform = new Survey123WebForm({
             questions.push(q);
         }
     })
-    console.log('questions',questions);
+    console.log(questions);
 })
 
 function flattenQuestions(obj) {
@@ -116,8 +99,3 @@ function flattenQuestions(obj) {
 
     return flattened;
 }
-
-
-
-
-
