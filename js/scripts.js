@@ -61,7 +61,7 @@ webform.on("formLoaded", async (e) => {
             questions.push(q);
         }
     })
-    console.log(questions);
+    console.log("questions",questions);
 })
 
 function flattenQuestions(obj) {
